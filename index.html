@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario y Lista de Usuarios</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Formulario de Usuario</h2>
+      <form id="userForm">
+        <div class="form-group">
+          <label for="nombreCompleto">Nombre Completo:</label>
+          <input type="text" class="form-control" id="nombreCompleto" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="foto">Foto:</label>
+          <input type="text" class="form-control" id="foto" placeholder="URL de la imagen" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Agregar Usuario</button>
+      </form>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="searchBar">Barra de Búsqueda</label>
+        <input type="text" id="searchBar" class="form-control" placeholder="Buscar usuarios...">
+      </div>
+      <div id="userList" class="row">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
